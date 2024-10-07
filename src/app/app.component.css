@@ -1,0 +1,27 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #28a745;
+  font-weight: bold;
+}
+
+a {
+  color: #28a745;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

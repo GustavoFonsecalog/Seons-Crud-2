@@ -1,0 +1,30 @@
+<div class="list-container">
+  <div class="button-container">
+    <button type="button" class="btn-back" (click)="goBack()">Voltar</button>
+  </div>
+  <h1>Listagem de Produtos</h1>
+  <div class="action-buttons"></div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>{{ getCategoryName(product.category_id) }}</td>
+        <td class="actions">
+          <button class="btn-edit" (click)="editProduct(product.id)">Editar</button>
+          <button class="btn-delete" (click)="deleteProduct(product.id)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
